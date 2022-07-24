@@ -34,6 +34,29 @@ a {
    color: var(--color-white);
 }
 
+.background {
+   margin: 0 20px;
+   border-radius: 8px;
+   padding: 10px 20px;
+   color: var(--color-gold);
+   background-color: var(--color-white);
+   font-family: var(--text-font);
+   font-size: var(--font-size);
+   box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.5);
+   transition: all 0.5s ease-in-out;
+}
+
+.background:hover {
+   color: var(--color-white);
+   background-color: var(--color-gold);
+}
+
+.links {
+   font-family: var(--text-font);
+   font-size: var(--font-size);
+   color: var(--text-color);
+}
+
 .hero {
    position: absolute;
    z-index: -1;
@@ -57,7 +80,7 @@ a {
    position: fixed;
    z-index: 2;
    top: 0;
-   left: -250px;
+   right: -260px;
    background-color: var(--color-gold);
    width: 250px;
    height: 100vh;
@@ -70,19 +93,37 @@ a {
 }
 
 .active {
-   left: 0;
+   right: 0;
 }
 
 .close {
    position: absolute;
    top: 15px;
-   right: 15px;
+   right: 30px;
    cursor: pointer;
 }
 
 .flex {
    display: flex;
    align-items: center;
+   gap: 10px;
+}
+
+.width {
+   width: 100%;
+}
+
+.drop-down {
+   position: absolute;
+   top: 60px;
+   width: 180px;
+   height: 120px;
+   right: -30px;
+   padding: 20px;
+   background-color: var(--color-white);
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
    gap: 10px;
 }
 

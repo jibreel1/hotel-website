@@ -1,19 +1,19 @@
 import React from "react";
 import heroImg from "../assets/hero1.png";
 import { Typography, Box, Button } from "@mui/material";
-import { CalendarMonth, KeyboardArrowDown } from "@mui/icons-material";
+import { CalendarMonth } from "@mui/icons-material";
 
 const Hero = () => {
    return (
       <div>
-         <div>
-            <img className="hero" src={heroImg} alt="Hero" loading="lazy" />
-            <div className="overlay"></div>
-         </div>
+         <img className="hero" src={heroImg} alt="Hero" loading="lazy" />
+         <div className="overlay"></div>
+
          <Box
             sx={{
-               width: { xs: "100%", md: "600px", lg: "900px" },
-               textAlign: { xs: "center", sm: "left" },
+               width: "100%",
+               textAlign: "center",
+               alignItems: "center",
                mt: { xs: "50px", sm: "120px" },
             }}
          >
@@ -41,43 +41,13 @@ const Hero = () => {
                Book your stay and enjoy Luxury redefined at the most affordable
                rates.
             </Typography>
-            <Button
+            {/* <Button
                variant="contained"
                sx={{ bgcolor: "#c99200", mt: "30px", gap: "10px" }}
             >
                <CalendarMonth fontSize="small" />
                Book Now
-            </Button>
-         </Box>
-         <Box
-            sx={{
-               textAlign: "center",
-               mt: { xs: "25px", sm: "70px", lg: "50px" },
-            }}
-         >
-            <Typography
-               variant="body1"
-               component="p"
-               fontSize="14px"
-               className="textfont"
-               mb={2}
-            >
-               Scroll
-            </Typography>
-            <KeyboardArrowDown
-               onClick={() => {
-                  window.scrollTo({ bottom: 10, behavior: "smooth" });
-               }}
-               fontSize="large"
-               sx={{
-                  color: "#fff",
-                  cursor: "pointer",
-                  bgcolor: "#c99200",
-                  p: "5px",
-                  borderRadius: "50%",
-                  alignItems: "center",
-               }}
-            />
+            </Button> */}
          </Box>
       </div>
    );

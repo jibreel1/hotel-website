@@ -25,8 +25,18 @@ const Sidebar = ({ close, links, showMenu }) => {
                </Link>
             ))}
          </Stack>
+         <Stack mt={8} textAlign="center" gap="20px">
+            <Link className="background" to="/">
+               Download App
+            </Link>
+            <Link className="background" to="/">
+               Sign Up / Login
+            </Link>
+         </Stack>
       </Box>
    );
 };
+
+// const SideDrops = { Sidebar, DropDown };
 
 export default Sidebar;
